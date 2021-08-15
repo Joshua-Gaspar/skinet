@@ -1,0 +1,19 @@
+<div class="container mt-5">
+    <h4>Internal server error - refreshing the page will make the execption disappear</h4>
+    <ng-container *ngIf="error">
+        <h5 class="text-danger">Error : {{error.message}}</h5>
+        <p class="font-weight-bold">Note if your seeing this then angulat is probably no responsible</p>
+        <p>What to do next?</p>
+        <ol>
+            <li>Open Chrome dev tools</li>
+            <li>Inspect the network tab</li>
+            <li>Check the failing request</li>
+            <li>Examine this request URL - make sure this is correct</li>
+            <li>Reproduce the error in postman - if we teh same response in Postman, then the issue is not with angular
+            </li>
+        </ol>
+        <p>Following is the stack trace - This is were your investigation should start|</p>
+        <code class="mt-5" style="background-color:whitesmoke;">{{error.details}}</code>
+    </ng-container>
+
+</div>
