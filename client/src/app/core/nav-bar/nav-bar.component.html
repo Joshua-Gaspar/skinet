@@ -13,12 +13,11 @@
       <a class="p-2 "routerLink ="/test-error"
           routerLinkActive="active"
           [routerLinkActiveOptions]="{exact:true}" >Error</a>
+
+          
     </nav>
     <div class="d-flex align-items-center">
-        <a routerLink ="/basket" class="position-relative">
-            <i class="fa fa-shopping-cart fa-2x mr-5 text-dark"></i>
-            <div *ngIf="(basket$ | async) as basket" class="cart-no">{{basket.items.length}}</div>
-        </a>
+       
 
         <ng-container *ngIf="(currentUser$ |async) === null">
 
@@ -28,6 +27,10 @@
         </ng-container>
 
         <ng-container *ngIf="(currentUser$ |async)">
+            <a routerLink ="/basket" class="position-relative">
+                <i class="fa fa-shopping-cart fa-2x mr-5 text-dark"></i>
+                <div *ngIf="(basket$ | async) as basket" class="cart-no">{{basket.items.length}}</div>
+            </a>
             <div class="dropdown ml-3 mr-5" dropdown>
                 <a class="dropdown-toggle" style="cursor: pointer;" dropdownToggle>
                     <strong>Welcome {{(currentUser$ |async).displayName}}</strong>
