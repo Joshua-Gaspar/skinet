@@ -13,7 +13,7 @@ import { IUser } from 'src/app/shared/models/user';
 export class NavBarComponent implements OnInit {
   basket$ : Observable<IBasket>;
   currentUser$:Observable<IUser>;
-  collapse = true;
+  isCollapsed = true;
 
   constructor(private basketService:BasketService, private accountService:AccountService) { }
 
