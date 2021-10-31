@@ -1,6 +1,6 @@
 # skinet
 E-commerce application with .Net Core using Generic Repository with Specification Pattern / Angular10 / Redis cache / Stripe payments
-
+Link: http://159.223.117.82
 
 This application is a proof of concept E-Commerce store using .net core web api and client side front-end Angular UI for the store using the Angular CLI. Some highlights of the project are following:
 
