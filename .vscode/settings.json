@@ -17,7 +17,7 @@
                 "name": "Linux",
                 "description": "SFTP folder",
 
-                "host": "159.223.117.82", "port": 22,
+                "host": "64.227.14.155", "port": 22,
                 "user": "root", "password": "joshua01Mail",
 
                 "dir": "/var/skinet",
